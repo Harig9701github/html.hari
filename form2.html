@@ -7,23 +7,31 @@
         <h1> Registation form</h1>
         <div>
             <label>user name</label>
-            <input type="text">
+            <input type="text" placeholder="names">
         </div>
         <div>
             <label>Email</label>
-            <input type="email">
+            <input type="email" placeholder="Email">
         </div>
         <div>
             <label>Password</label>
-            <input type="password">
+            <input type="password" placeholder="password" minlength="4" maxlength="8">
         </div>
         <div>
             <label>confirm password</label>
-            <input type="password">
+            <input type="password" placeholder="confirm password">
         </div>
         <div>
             <label>Date of birth</label>
             <input type="date">
+        </div>
+        <div>
+            <label>Age</label>
+            <input type="number" min="18" max="60">
+        </div>
+        <div>
+            <label>Amount</label>
+            <input type="number" min="100" max="1000">
         </div>
         <div>
             <label>color</label>
@@ -31,8 +39,15 @@
         </div>
         <div>
             <label>Radio</label>
-            <input type="radio">male
-            <input type="radio">female
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+        </div>
+        <div>
+            <label>cours</label>
+            <input type="radio" name="cours" value="js">js
+            <input type="radio" name="cours" value="react js">react js
+            <input type="radio" name="cours" value="java">java
+            <input type="radio" name="cours" value="paython">paython
         </div>
         <div>
             <label>search</label>
@@ -71,8 +86,8 @@
             <input type="checkbox">
         </div><br>
         <div>
-            <input type="reset">
-            <input type="submit">
+            <input type="reset" value="cancel">
+            <input type="submit" value="register">
         </div>
     </body>
 </html>
